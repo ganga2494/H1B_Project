@@ -1,0 +1,2 @@
+   hadoop jar 4.jar Que4 /user/hive/warehouse/h1b.db/h1bfinal /user/hduser/hadoop/4output
+   hadoop fs -cat /user/hduser/hadoop/4output/p*;
