@@ -1,0 +1,2 @@
+Select case_status,year,(ad*100)/a.roc from (Select count(*) as ad ,case_status,year from h1b  group by case_status,year) b,(select count(*) as roc from h1b) a order by case_status; 
+

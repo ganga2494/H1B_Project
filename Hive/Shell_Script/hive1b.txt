@@ -1,0 +1,1 @@
+Select job_title, count(*) as ad from h1b group by job_title order by ad desc limit 5;

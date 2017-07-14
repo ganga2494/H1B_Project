@@ -1,0 +1,2 @@
+ select count(case_status) as ad,year,employer_name from h1b group by employer_name,year order by ad desc limit 5;
+

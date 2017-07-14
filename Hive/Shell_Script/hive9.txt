@@ -1,0 +1,1 @@
+Select employer_name,(ad*100)/ad1 as top10 from (select count(*) as ad1,1 as tojoin from h1b)b join (Select count(*) as ad,1 as tojoin,employer_name from h1b where case_status="CERTIFIED" or case_status="CERTIFIED WITHDRAWN" group by employer_name) a on a.tojoin=b.tojoin  order  by  top10 limit 10;

@@ -1,0 +1,2 @@
+select job_title,year,count(*) as ad from h1b where job_title =='DATA ENGINEER' group by job_title,year order by year;
+

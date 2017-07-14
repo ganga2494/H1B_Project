@@ -1,0 +1,2 @@
+select soc_name,count(job_title) as ad from h1b where job_title == 'DATA SCIENTIST' group by soc_name order by ad;
+
