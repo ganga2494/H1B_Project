@@ -1,0 +1,15 @@
+1b) Find top 5 job titles who are having highest growth in applications.
+
+Select job_title, count(*) as ad from h1b group by job_title order by ad desc limit 5;
+
+
+output:-
+
+job_title	         ad
+PROGRAMMER ANALYST	249038
+SOFTWARE ENGINEER	121307
+COMPUTER PROGRAMMER	70570
+SYSTEMS ANALYST	        61965
+SOFTWARE DEVELOPER	42907
+
+

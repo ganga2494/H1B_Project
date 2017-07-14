@@ -1,0 +1,13 @@
+2 b) find top 5 locations in the US who have got certified visa for each year?
+
+     select  worksite, case_status,year,count(worksite) as ad from h1b where case_status == 'CERTIFIED' or case_status == 'CERTIFIED-WITHDRAW' group by worksite,case_status,year order by ad desc limit 5;
+
+
+
+Output: 
+             2016	CERTIFIED	NEW YORK, NEW YORK	34639
+             2015	CERTIFIED	NEW YORK, NEW YORK	31266
+             2014	CERTIFIED	NEW YORK, NEW YORK	27634
+             2012	CERTIFIED	NEW YORK, NEW YORK	23737
+             2013	CERTIFIED	NEW YORK, NEW YORK	23537
+

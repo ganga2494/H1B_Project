@@ -1,0 +1,12 @@
+4)  Which top 5 employers file the most petitions each year?
+
+    select count(case_status) as ad,year,employer_name from h1b group by employer_name,year order by ad desc limit 5;
+
+
+  Output: 
+            33245	2015	INFOSYS LIMITED
+            32223	2013	INFOSYS LIMITED
+            25352	2016	INFOSYS LIMITED
+            23759	2014	INFOSYS LIMITED
+            16725	2016	CAPGEMINI AMERICA INC
+

@@ -1,0 +1,60 @@
+3)Which industry has the most number of Data Scientist positions?
+
+select soc_name,count(job_title) as ad from h1b where job_title == 'DATA SCIENTIST' group by soc_name order by ad;
+
+
+output:-
+
+
+soc_name	                                       ad
+ACTUARIES	                                        1
+SOFTWARE DEVELOPERS, APPLICATIONS, R&D	                1
+Management Analysts	                                1
+MEDICAL SCIENTISTS, EXCEPT EPIDEMIOLOGISTS	        1
+MATERIALS SCIENTISTS	                                1
+MATERIALS ENGINEERS	                                1
+MANAGEMENT ANALYSTS	                                1
+Life Scientists, All Other	                        1
+Economists	                                        1
+Credit Analysts	                                        1
+COMPUTER SYSTEMS ANALYST	                        1
+COMPUTER OCCUPATIONS, ALL OTHER*	                1
+COMPUTER & INFORMATION RESEARCH SCIENTISTS	        1
+COMPUTER & INFORMATION RESEARCH SCIENTIST	        1
+CLINICAL DATA MANAGERS	                                1
+CIVIL ENGINEERS	                                        1
+BUSINESS INTELLIGENCE ANALYSTS	                        1
+ELECTRICAL ENGINEERS	                                2
+SURVEY RESEARCHERS	                                2
+STATISTICAL ASSISTANTS	                                2
+SALES ENGINEERS	                                        2
+Mathematicians	                                        2
+NA	                                                2
+ENGINEERS, ALL OTHER	                                2
+COMPUTER NETWORK ARCHITECTS	                        3
+INDUSTRIAL-ORGANIZATIONAL PSYCHOLOGISTS	                3
+COMPUTER AND INFORMATION SYSTEMS MANAGERS	        3
+Software Developers, Systems Software	                4
+ECONOMISTS	                                        5
+Database Administrators	                                5
+COMPUTER PROGRAMMERS	                                5
+DATABASE ADMINISTRATORS	                                6
+BIOLOGICAL SCIENTISTS, ALL OTHER	                6
+Computer Systems Analysts	                        6
+MATHEMATICAL TECHNICIANS	                        7
+MARKET RESEARCH ANALYSTS AND MARKETING SPECIALISTS	7
+Software Developers, Applications	                9
+Computer Occupations, All Other	                        11
+FINANCIAL SPECIALISTS, ALL OTHER	                11
+Operations Research Analysts	                        26
+SOFTWARE DEVELOPERS, SYSTEMS SOFTWARE	                37
+Statisticians	                                        37
+Computer and Information Research Scientists	        56
+COMPUTER SYSTEMS ANALYSTS	                        66
+SOFTWARE DEVELOPERS, APPLICATIONS	                79
+MATHEMATICIANS	                                       108
+COMPUTER OCCUPATIONS, ALL OTHER	                       121
+OPERATIONS RESEARCH ANALYSTS	                       253
+COMPUTER AND INFORMATION RESEARCH SCIENTISTS	       333
+STATISTICIANS	                                       415
+

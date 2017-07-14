@@ -1,0 +1,7 @@
+8) Find the average Prevailing Wage for each Job for each Year ? (take part time and full time separate)
+
+select avg(prevailing_wage),job_title,year from h1b group by job_title,year,FULL_TIME_POSITION  order by job_title;
+
+
+
+

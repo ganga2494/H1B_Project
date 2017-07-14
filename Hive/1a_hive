@@ -1,0 +1,15 @@
+1 a) Is the number of petitions with Data Engineer job title increasing over time?
+select job_title,year,count(*) as ad from h1b where job_title =='DATA ENGINEER' group by job_title,year order by year;
+
+
+output:-
+
+job_title	year	ad
+DATA ENGINEER	2011	18
+DATA ENGINEER	2012	32
+DATA ENGINEER	2013	41
+DATA ENGINEER	2014	89
+DATA ENGINEER	2015	160
+DATA ENGINEER	2016	251
+
+ 

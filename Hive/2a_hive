@@ -1,0 +1,220 @@
+2 a) Which part of the US has the most Data Engineer jobs for each year?
+
+     select  worksite,job_title,year, count(*) from h1b where job_title=='DATA ENGINEER' group by worksite,job_title,year;
+
+
+Output:-
+
+  Output: 
+             2011	ATLANTA, GEORGIA	               DATA ENGINEER	1
+             2011	FARMINGTON HILLS, MICHIGAN	       DATA ENGINEER	2
+             2011	HOUSTON, TEXAS	                       DATA ENGINEER	1
+             2011	INDIANAPOLIS, INDIANA	               DATA ENGINEER	1
+             2011	LOS ANGELES, CALIFORNIA	               DATA ENGINEER	1
+             2011	NEWTON, MASSACHUSETTS	               DATA ENGINEER	1
+             2011	NORWALK, CONNECTICUT	               DATA ENGINEER	1
+             2011	PLANO, TEXAS	                       DATA ENGINEER	2
+             2012	BURLINGTON, MASSACHUSETTS	       DATA ENGINEER	1
+             2012	FOLSOM, CALIFORNIA	               DATA ENGINEER	1
+             2012	LEXINGTON, MASSACHUSETTS	       DATA ENGINEER	2
+             2012	NEW YORK, NEW YORK	               DATA ENGINEER	1
+             2012	PEARLAND, TEXAS	                       DATA ENGINEER	1
+             2012	PONTIAC, MICHIGAN	               DATA ENGINEER	3
+             2012	SAN FRANCISCO, CALIFORNIA	       DATA ENGINEER	7
+             2012	SANTA MONICA, CALIFORNIA	       DATA ENGINEER	1
+             2012	SEATTLE, WASHINGTON	               DATA ENGINEER	2
+             2012	STERLING HEIGHTS, MICHIGAN	       DATA ENGINEER	1
+             2012	WOODLAND HILLS, CALIFORNIA	       DATA ENGINEER	1
+             2013	CINCINNATI, OHIO	               DATA ENGINEER	1
+             2013	DETROIT, MICHIGAN	               DATA ENGINEER	2
+             2013	DUBLIN, OHIO	                       DATA ENGINEER	2
+             2013	FRANKLIN, TENNESSEE	               DATA ENGINEER	1
+             2013	IRVINE, CALIFORNIA	               DATA ENGINEER	1
+             2013	MENLO PARK, CALIFORNIA	               DATA ENGINEER	10
+             2013	NORRISTOWN, PENNSYLVANIA	       DATA ENGINEER	1
+             2013	OLD TAPPAN, NEW JERSEY	               DATA ENGINEER	1
+             2013	OLYMPIA, WASHINGTON	               DATA ENGINEER	1
+             2013	REDWOOD CITY, CALIFORNIA	       DATA ENGINEER	1
+             2013	ROSEVILLE, CALIFORNIA	               DATA ENGINEER	1
+             2014	ALHAMBRA, CALIFORNIA	               DATA ENGINEER	2
+             2014	CALVERT, ALABAMA	               DATA ENGINEER	1
+             2014	CONCORD, MASSACHUSETTS	               DATA ENGINEER	1
+             2014	DULUTH, GEORGIA	                       DATA ENGINEER	1
+             2014	MOUNTAIN VIEW, CALIFORNIA	       DATA ENGINEER	5
+             2014	NEW YORK, NEW YORK	               DATA ENGINEER	9
+             2014	NEWARK, CALIFORNIA	               DATA ENGINEER	1
+             2014	NEWARK, NEW JERSEY	               DATA ENGINEER	1
+             2014	PALO ALTO, CALIFORNIA	               DATA ENGINEER	3
+             2014	SAN FRANCISCO, CALIFORNIA	       DATA ENGINEER	12
+             2014	SAN MATEO, CALIFORNIA	               DATA ENGINEER	2
+             2014	SANTA BARBARA, CALIFORNIA	       DATA ENGINEER	1
+             2014	SANTA CLARA, CALIFORNIA	               DATA ENGINEER	1
+             2014	SANTA MONICA, CALIFORNIA	       DATA ENGINEER	1
+             2014	SARATOGA, CALIFORNIA	               DATA ENGINEER	1
+             2014	SEATTLE, WASHINGTON	               DATA ENGINEER	3
+             2014	VIENNA, VIRGINIA	               DATA ENGINEER	2
+             2014	WAYNE, PENNSYLVANIA	               DATA ENGINEER	1
+             2015	AUSTIN, TEXAS	                       DATA ENGINEER	1
+             2015	BOSTON, MASSACHUSETTS	               DATA ENGINEER	3
+             2015	CHICAGO, ILLINOIS	               DATA ENGINEER	2
+             2015	CUPERTINO, CALIFORNIA	               DATA ENGINEER	1
+             2015	EAST ROCHESTER, NEW YORK	       DATA ENGINEER	2
+             2015	EL PASO, TEXAS	                       DATA ENGINEER	1
+             2015	FREMONT, CALIFORNIA	               DATA ENGINEER	1
+             2015	HARTFORD, CONNECTICUT	               DATA ENGINEER	1
+             2015	INDIANAPOLIS, INDIANA	               DATA ENGINEER	1
+             2015	MENLO PARK, CALIFORNIA	               DATA ENGINEER	19
+             2015	OMAHA, NEBRASKA	                       DATA ENGINEER	1
+             2015	PHILADELPHIA, PENNSYLVANIA	       DATA ENGINEER	1
+             2015	PLANO, TEXAS	                       DATA ENGINEER	1
+             2015	QUINCY, MASSACHUSETTS	               DATA ENGINEER	1
+             2015	RANCHO CORDOVA, CALIFORNIA	       DATA ENGINEER	1
+             2015	REDMOND, WASHINGTON	               DATA ENGINEER	1
+             2015	REDWOOD CITY, CALIFORNIA	       DATA ENGINEER	3
+             2015	ROOSEVELT ISLAND, NEW YORK	       DATA ENGINEER	1
+             2015	SAN JOSE, CALIFORNIA	               DATA ENGINEER	3
+             2015	SAN RAMON, CALIFORNIA	               DATA ENGINEER	2
+             2015	ST. PETERSBURG, FLORIDA                DATA ENGINEER	1
+             2015	SUNNYVALE, CALIFORNIA	               DATA ENGINEER	2
+             2015	TARRYTOWN, NEW YORK	               DATA ENGINEER	2
+             2015	WINSTON-SALEM, NORTH CAROLINA	       DATA ENGINEER	1
+             2016	ALLEN PARK, MICHIGAN	               DATA ENGINEER	1
+             2016	AMES, IOWA	                       DATA ENGINEER	2
+             2016	AMHERST, MASSACHUSETTS	               DATA ENGINEER	1
+             2016	BELLEVUE, WASHINGTON	               DATA ENGINEER	3
+             2016	BERKELEY LAKE, GEORGIA	               DATA ENGINEER	1
+             2016	BURLINGTON, MASSACHUSETTS	       DATA ENGINEER	1
+             2016	CAMBRIDGE, MASSACHUSETTS	       DATA ENGINEER	1
+             2016	CAMPBELL, CALIFORNIA	               DATA ENGINEER	2
+             2016	EL SEGUNDO, CALIFORNIA	               DATA ENGINEER	1
+             2016	EMERYVILLE, CALIFORNIA	               DATA ENGINEER	1
+             2016	ENCINO, CALIFORNIA	               DATA ENGINEER	2
+             2016	FOSTER CITY, CALIFORNIA	               DATA ENGINEER	1
+             2016	GLENDALE, CALIFORNIA	               DATA ENGINEER	1
+             2016	HAYWARD, CALIFORNIA	               DATA ENGINEER	1
+             2016	HILLSBORO, OREGON	               DATA ENGINEER	1
+             2016	LANSING, MICHIGAN	               DATA ENGINEER	1
+             2016	LOS GATOS, CALIFORNIA	               DATA ENGINEER	1
+             2016	MOUNTAIN VIEW, CALIFORNIA	       DATA ENGINEER	5
+             2016	NASHVILLE, TENNESSEE	               DATA ENGINEER	1
+             2016	NEW BRUNSWICK, NEW JERSEY	       DATA ENGINEER	1
+             2016	NEW YORK, NEW YORK	               DATA ENGINEER	34
+             2016	NEWARK, NEW JERSEY	               DATA ENGINEER	1
+             2016	NY, NEW YORK	                       DATA ENGINEER	1
+             2016	PALO ALTO, CALIFORNIA	               DATA ENGINEER	5
+             2016	PLYMOUTH, MINNESOTA	               DATA ENGINEER	2
+             2016	REDWOOD, CALIFORNIA	               DATA ENGINEER	1
+             2016	ROGERS, ARKANSAS	               DATA ENGINEER	2
+             2016	ROLLING MEADOWS, ILLINOIS	       DATA ENGINEER	3
+             2016	SAN BRUNO, CALIFORNIA	               DATA ENGINEER	2
+             2016	SAN CARLOS, CALIFORNIA	               DATA ENGINEER	2
+             2016	SAN DIEGO, CALIFORNIA	               DATA ENGINEER	4
+             2016	SAN FRANCISCO, CALIFORNIA	       DATA ENGINEER	33
+             2016	SAN MATEO, CALIFORNIA	               DATA ENGINEER	9
+             2016	SANTA BARBARA, CALIFORNIA	       DATA ENGINEER	1
+             2016	SANTA CLARA, CALIFORNIA	               DATA ENGINEER	5
+             2016	SANTA MONICA, CALIFORNIA	       DATA ENGINEER	2
+             2016	SCHAUMBURG, ILLINOIS	               DATA ENGINEER	1
+             2016	SEATTLE, WASHINGTON	               DATA ENGINEER	5
+             2016	SILVER SPRING, MARYLAND	               DATA ENGINEER	1
+             2016	TROY, MICHIGAN	                       DATA ENGINEER	1
+             2016	VENICE, CALIFORNIA	               DATA ENGINEER	1
+             2016	VIENNA, VIRGINIA	               DATA ENGINEER	3
+             2016	WALTHAM, MASSACHUSETTS	               DATA ENGINEER	3
+             2016	YORKTOWN HEIGHTS, NEW YORK	       DATA ENGINEER	1
+             2011	FOLSOM, CALIFORNIA	               DATA ENGINEER	1
+             2011	PONTIAC, MICHIGAN	               DATA ENGINEER	1
+             2011	ROCHESTER, NEW YORK	               DATA ENGINEER	1
+             2011	SAN FRANCISCO, CALIFORNIA	       DATA ENGINEER	3
+             2011	SEATTLE, WASHINGTON	               DATA ENGINEER	1
+             2011	SUPERIOR, COLORADO	               DATA ENGINEER	1
+             2012	ATLANTA, GEORGIA	               DATA ENGINEER	1
+             2012	BOSTON, MASSACHUSETTS	               DATA ENGINEER	1
+             2012	CHICAGO, ILLINOIS	               DATA ENGINEER	1
+             2012	DUBLIN, OHIO	                       DATA ENGINEER	1
+             2012	LAKE OSWEGO, OREGON	               DATA ENGINEER	1
+             2012	LOS ANGELES, CALIFORNIA                DATA ENGINEER	2
+             2012	MCLEAN, VIRGINIA	               DATA ENGINEER	1
+             2012	OLD TAPPAN, NEW JERSEY	               DATA ENGINEER	1
+             2012	OLYMPIA, WASHINGTON	               DATA ENGINEER	1
+             2012	WHITE PLAINS, NEW YORK	               DATA ENGINEER	1
+             2013	BURNS HARBOR, INDIANA	               DATA ENGINEER	1
+             2013	COLUMBIA, SOUTH CAROLINA	       DATA ENGINEER	1
+             2013	MOUNTAIN VIEW, CALIFORNIA	       DATA ENGINEER	1
+             2013	NEW YORK, NEW YORK	               DATA ENGINEER	4
+             2013	NEWARK, NEW JERSEY	               DATA ENGINEER	2
+             2013	ROCHESTER, NEW YORK	               DATA ENGINEER	1
+             2013	SAN DIEGO, CALIFORNIA	               DATA ENGINEER	1
+             2013	SAN FRANCISCO, CALIFORNIA	       DATA ENGINEER	5
+             2013	SANTA CLARA, CALIFORNIA	               DATA ENGINEER	1
+             2013	SEATTLE, WASHINGTON	               DATA ENGINEER	1
+             2013	WAYNE, PENNSYLVANIA	               DATA ENGINEER	1
+             2014	ATLANTA, GEORGIA	               DATA ENGINEER	1
+             2014	BOSTON, MASSACHUSETTS	               DATA ENGINEER	3
+             2014	CHICAGO, ILLINOIS	               DATA ENGINEER	3
+             2014	COLUMBUS, OHIO	                       DATA ENGINEER	2
+             2014	ENGLEWOOD, COLORADO	               DATA ENGINEER	1
+             2014	HOUSTON, TEXAS	                       DATA ENGINEER	1
+             2014	MCLEAN, VIRGINIA	               DATA ENGINEER	2
+             2014	MENLO PARK, CALIFORNIA	               DATA ENGINEER	13
+             2014	NAPERVILLE, ILLINOIS	               DATA ENGINEER	1
+             2014	OMAHA, NEBRASKA	                       DATA ENGINEER	4
+             2014	PLANO, TEXAS	                       DATA ENGINEER	1
+             2014	SAN JOSE, CALIFORNIA	               DATA ENGINEER	2
+             2014	SOUTH SAN FRANCISCO, CALIFORNIA	       DATA ENGINEER	2
+             2014	ST. PETERSBURG, FLORIDA	               DATA ENGINEER	3
+             2014	WALNUT CREEK, CALIFORNIA	       DATA ENGINEER	2
+             2015	ALPHARETTA, GEORGIA	               DATA ENGINEER	1
+             2015	BURLINGAME, CALIFORNIA	               DATA ENGINEER	1
+             2015	CAMBRIDGE, MASSACHUSETTS	       DATA ENGINEER	2
+             2015	CARLSBAD, CALIFORNIA	               DATA ENGINEER	1
+             2015	CULVER CITY, CALIFORNIA	               DATA ENGINEER	1
+             2015	GLENDALE, CALIFORNIA	               DATA ENGINEER	1
+             2015	MORRISVILLE, NORTH CAROLINA	       DATA ENGINEER	1
+             2015	MOUNTAIN VIEW, CALIFORNIA	       DATA ENGINEER	5
+             2015	NEW YORK, NEW YORK	               DATA ENGINEER	25
+             2015	PALO ALTO, CALIFORNIA	               DATA ENGINEER	3
+             2015	PORTLAND, MAINE	                       DATA ENGINEER	1
+             2015	SAN BRUNO, CALIFORNIA	               DATA ENGINEER	1
+             2015	SAN DIEGO, CALIFORNIA	               DATA ENGINEER	2
+             2015	SAN FRANCISCO, CALIFORNIA	       DATA ENGINEER	33
+             2015	SAN MATEO, CALIFORNIA	               DATA ENGINEER	12
+             2015	SANTA BARBARA, CALIFORNIA	       DATA ENGINEER	2
+             2015	SANTA MONICA, CALIFORNIA	       DATA ENGINEER	4
+             2015	SCHAUMBURG, ILLINOIS	               DATA ENGINEER	1
+             2015	SEATTLE, WASHINGTON	               DATA ENGINEER	6
+             2015	TAMPA, FLORIDA	                       DATA ENGINEER	1
+             2015	TROY, MICHIGAN	                       DATA ENGINEER	3
+             2016	ATLANTA, GEORGIA	               DATA ENGINEER	1
+             2016	AUSTIN, TEXAS	                       DATA ENGINEER	2
+             2016	BERKELEY, CALIFORNIA	               DATA ENGINEER	1
+             2016	BOSTON, MASSACHUSETTS	               DATA ENGINEER	3
+             2016	CALABASAS, CALIFORNIA	               DATA ENGINEER	1
+             2016	CHATTANOOGA, TENNESSEE	               DATA ENGINEER	1
+             2016	CHICAGO, ILLINOIS	               DATA ENGINEER	6
+             2016	EAST ROCHESTER, NEW YORK	       DATA ENGINEER	3
+             2016	FORT LAUDERDALE, FLORIDA	       DATA ENGINEER	1
+             2016	JERSEY CITY, NEW JERSEY	               DATA ENGINEER	1
+             2016	LOS ALTOS, CALIFORNIA	               DATA ENGINEER	1
+             2016	LOS ANGELES, CALIFORNIA	               DATA ENGINEER	2
+             2016	MCLEAN, VIRGINIA	               DATA ENGINEER	1
+             2016	MENLO PARK, CALIFORNIA	               DATA ENGINEER	35
+             2016	MILWAUKEE, WISCONSIN	               DATA ENGINEER	1
+             2016	NAPERVILLE, ILLINOIS	               DATA ENGINEER	1
+             2016	NEW YORK CITY, NEW YORK	               DATA ENGINEER	2
+             2016	NORTHBROOK, ILLINOIS	               DATA ENGINEER	1
+             2016	OMAHA, NEBRASKA	                       DATA ENGINEER	2
+             2016	PHOENIX, ARIZONA	               DATA ENGINEER	1
+             2016	PLANO, TEXAS	                       DATA ENGINEER	4
+             2016	RANCHO CORDOVA, CALIFORNIA	       DATA ENGINEER	2
+             2016	REDWOOD CITY, CALIFORNIA	       DATA ENGINEER	6
+             2016	RICHMOND, VIRGINIA	               DATA ENGINEER	2
+             2016	SAN JOSE, CALIFORNIA	               DATA ENGINEER	4
+             2016	SAN RAFAEL, CALIFORNIA	               DATA ENGINEER	1
+             2016	ST. PETERSBURG, FLORIDA	               DATA ENGINEER	2
+             2016	STEVENS POINT, WISCONSIN	       DATA ENGINEER	2
+             2016	SUNNYVALE, CALIFORNIA	               DATA ENGINEER	5
+             2016	TEANECK, NEW JERSEY	               DATA ENGINEER	1
+             2016	WALNUT CREEK, CALIFORNIA	       DATA ENGINEER	1
+             2016	WARREN, MICHIGAN	               DATA ENGINEER	1
+             2016	WINSTON-SALEM, NORTH CAROLINA	       DATA ENGINEER	1

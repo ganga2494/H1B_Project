@@ -1,0 +1,13 @@
+7) Create a bar graph to depict the number of applications for each year
+
+select year,count(soc_name) as applications from h1b group by year;
+
+
+
+Output:
+2011	358767
+2013	442114
+2015	618727
+2012	415607
+2014	519427
+2016	647802

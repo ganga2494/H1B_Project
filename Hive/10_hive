@@ -1,0 +1,6 @@
+10) Which are the top 10 job positions which have the highest success rate in petitions?
+
+Select job_title,(top*100)/ad1 as top10  from (Select count(*) as top,job_title from h1bfinal where case_status= "CERTIFIED" or case_status="CERTIFIED WITHDRAWN"  group by job_title )b,(Select count(*)  as ad1 from h1b) a  order by top10 limit 10;
+
+
+
