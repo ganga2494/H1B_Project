@@ -12,6 +12,7 @@ first = filter h1b by job_title == 'DATA ENGINEER';
 second = foreach first generate soc_name,year;
 third = group second by $1;
 count1 = foreach third generate $0,COUNT(second.soc_name);
+count1 = foreach third generate $0,COUNT(second.soc_name);
 
 
 
